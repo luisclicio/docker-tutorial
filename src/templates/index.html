@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/index.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Docker Tutorial</h1>
+    <p>Docker é muito legal!</p>
+
+    <section>
+      <h2>Cadastrar usuário</h2>
+
+      <form action="/api/users" method="POST">
+        <label>
+          Nome:
+          <input type="text" name="name" />
+        </label>
+
+        <label>
+          E-mail:
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Senha:
+          <input type="password" name="password" />
+        </label>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    {% if users %}
+    <section>
+      <h2>Usuários cadastrados</h2>
+
+      <ul>
+        {% for user in users %}
+        <li>#{{ user.id }} - {{ user.name }} - {{ user.email }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </body>
+</html>

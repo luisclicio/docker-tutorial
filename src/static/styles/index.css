@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input,
+button {
+  padding: 4px;
+}
+
+button {
+  cursor: pointer;
+}
