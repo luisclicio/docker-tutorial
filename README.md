@@ -32,6 +32,12 @@ executá-lo, siga as etapas a seguir:
   git clone https://github.com/DarkTechLC/docker-tutorial.git && cd docker-tutorial
   ```
 
+- Copie o arquivo `.env.example` para `.env`:
+
+  ```sh
+  cp .env.example .env
+  ```
+
 - Inicie a aplicação:
 
   ```sh
