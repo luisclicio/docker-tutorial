@@ -28,20 +28,20 @@ executá-lo, siga as etapas a seguir:
 
 - Clone o projeto e acesse o diretório dele:
 
-```sh
-git clone https://github.com/DarkTechLC/docker-tutorial && cd docker-tutorial
-```
+  ```sh
+  git clone https://github.com/DarkTechLC/docker-tutorial.git && cd docker-tutorial
+  ```
 
 - Inicie a aplicação:
 
-```sh
-docker-compose up -d
-```
+  ```sh
+  docker-compose up -d
+  ```
 
 - No navegador, acesse [`http://localhost:8000`](http://localhost:8000).
 
 - Para parar a aplicação:
 
-```sh
-docker-compose down
-```
+  ```sh
+  docker-compose down
+  ```
